@@ -1,8 +1,8 @@
 /**
  * Receipt4.java  
  *
- * @author – Your name
- * @author – Class period
+ * @author – Devin 
+ * @author – Ap Computer Science A Period 1
  */ 
 import java.util.Scanner;
 public class Receipt4
