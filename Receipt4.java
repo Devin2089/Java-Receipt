@@ -1,11 +1,11 @@
 /**
- * Receipt3.java  
+ * Receipt4.java  
  *
  * @author – Your name
  * @author – Class period
  */ 
 import java.util.Scanner;
-public class Receipt3
+public class Receipt4
 {
    public static void main(String [] args)
    {
@@ -50,7 +50,7 @@ public class Receipt3
       Double Total = Subtotal + Tax;
       System.out.println("**************************************");
       System.out.println("*                                    *");
-      System.out.println("*    " + capitals.toString() + " Snack Bar      *");
+      System.out.println("*    " + capitals.toString() + " Snack Bar                  *");
       System.out.println("*                                    *");
       System.out.println("*     "+drink+" .........."+drinkCost+"          *");                      
       System.out.println("*     "+candy+" .........." +candyCost+ "          *");     
