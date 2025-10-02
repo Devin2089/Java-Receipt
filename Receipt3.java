@@ -19,18 +19,17 @@ public class Receipt3
       String hamburger = "Hamburger";
       String hamburgerCost = "$3.50";
       int randomOrderNumber = (int)(Math.random() * 100) + 1;
-      
       Scanner scan=new Scanner(System.in);
-      for (int i=0; i<1; i++) {
-          char letter = highSchoolName.charAt(i);
-          if (Character.isUpperCase(letter)) {
-              System.out.println(letter + " is uppercase");
-          } else if (Character.isLowerCase(letter)) {
-              letter = Character.toUpperCase(letter);
-          } 
-      }
       System.out.print("Please enter High School Name: ");
-      highSchoolName = scan.nextLine();
+      highSchoolName = scan.nextLine(); 
+      // Extract only capital letters from the high school name;
+      StringBuilder capitals = new StringBuilder();
+      for (int i = 0; i < highSchoolName.length(); i++) {
+         char letter = highSchoolName.charAt(i);
+         if (Character.isUpperCase(letter)) {
+            capitals.append(letter);
+         }
+      }
       System.out.print("Enter drink quantity: ");
       int DrinkQuantity = Integer.parseInt(scan.nextLine());
       System.out.print("Enter candy quantity: ");
@@ -51,7 +50,7 @@ public class Receipt3
       Double Total = Subtotal + Tax;
       System.out.println("**************************************");
       System.out.println("*                                    *");
-      System.out.println("*    " + highSchoolName + " Snack Bar      *");
+      System.out.println("*    " + capitals.toString() + " Snack Bar      *");
       System.out.println("*                                    *");
       System.out.println("*     "+drink+" .........."+drinkCost+"          *");                      
       System.out.println("*     "+candy+" .........." +candyCost+ "          *");     
